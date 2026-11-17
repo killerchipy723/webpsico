@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section id="inicio" class="py-5 bg-light align-items-center d-flex min-vh-75">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge badge-brand fs-6 px-3 py-2 rounded-pill mb-3">Salud Mental & Bienestar</span>
+                <h1 class="display-5 fw-bold lh-sm mb-3">Psicoterapia cálida y adaptada a tu proceso personal</h1>
+                <p class="lead text-muted-custom mb-4">Acompañamiento profesional en modalidad online y presencial. Adquiere herramientas prácticas para construir una vida en equilibrio.</p>
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                    <a href="#contacto" class="btn btn-brand btn-lg rounded-pill px-4 shadow-sm text-center">Agendar Cita</a>
+                    <a href="#sobre-mi" class="btn btn-outline-brand btn-lg rounded-pill px-4 text-center">Conocer más</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="{{ url_for('static', filename='img/foto.jpg') }}" class="img-fluid rounded-4 shadow" alt="Lic. Inés Camaño" style="max-height: 450px; width: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE MÍ & MÉTRICAS -->
+<section id="sobre-mi" class="py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Hola, soy la Lic. Inés Camaño</h2>
+                <p class="fs-5 fw-semibold" style="color: var(--brand-hover);">Psicóloga Especialista en Clínica y Psicoterapia</p>
+                <p class="text-muted-custom">Mi objetivo es ofrecerte un espacio seguro, empático y profesional donde puedas abordar tus inquietudes, mejorar tus relaciones y potenciar tu bienestar emocional con tratamientos validados.</p>
+                
+                <div class="row text-center mt-4 g-3">
+                    <div class="col-4">
+                        <div class="p-3 bg-light rounded-4 border">
+                            <h3 class="fw-bold mb-0" style="color: var(--brand-primary);">+500</h3>
+                            <small class="text-muted-custom">Pacientes</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3 bg-light rounded-4 border">
+                            <h3 class="fw-bold mb-0" style="color: var(--brand-primary);">+3.000</h3>
+                            <small class="text-muted-custom">Horas clínica</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3 bg-light rounded-4 border">
+                            <h3 class="fw-bold mb-0" style="color: var(--brand-primary);">100%</h3>
+                            <small class="text-muted-custom">Confidencial</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 bg-brand-dark text-white p-4 p-md-5 rounded-4 shadow-lg">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 fs-5 fst-italic">
+                            "Ir a terapia no significa estar en una situación crítica; significa contar con herramientas para vivir con mayor calma y plenitud."
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-white-50 mt-4 mb-0 fs-6">
+                            Lic. Inés Camaño
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+            <h2 class="fw-bold">Áreas de Atención</h2>
+            <p class="text-muted-custom lead">Procesos terapéuticos diseñados a la medida de tus necesidades.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="card-body">
+                        <div class="icon-box-brand p-3 rounded-4 mb-3 d-inline-block fs-3">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Psicoterapia Online</h4>
+                        <p class="card-text text-muted-custom">Atención accesible y confidencial desde la comodidad de tu hogar, sin importar en qué ciudad o país te encuentres.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="card-body">
+                        <div class="icon-box-brand p-3 rounded-4 mb-3 d-inline-block fs-3">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Terapia de Pareja</h4>
+                        <p class="card-text text-muted-custom">Espacio orientado a mejorar la comunicación, resolver desacuerdos cotidianos y afianzar la dinámica relacional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="card-body">
+                        <div class="icon-box-brand p-3 rounded-4 mb-3 d-inline-block fs-3">
+                            <i class="bi bi-shield-heart-fill"></i>
+                        </div>
+                        <h4 class="card-title fw-bold">Ansiedad y Estrés</h4>
+                        <p class="card-text text-muted-custom">Técnicas de regulación emocional para dominar la rumiación de pensamientos y afrontar el día a día con tranquilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+<section id="faq" class="py-5">
+    <div class="container py-4">
+        <h2 class="fw-bold text-center mb-4">Preguntas Frecuentes</h2>
+        <div class="accordion accordion-flush max-w-800 mx-auto shadow-sm rounded-4 border p-3" id="faqAccordion">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        ¿Cómo se solicita y coordina una sesión online?
+                    </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted-custom">
+                        Al enviar el formulario o escribir por WhatsApp, acordamos el día y horario que mejor te convenga. Las sesiones se realizan vía videollamada con total privacidad.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        ¿Cuándo se recomienda comenzar terapia?
+                    </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted-custom">
+                        No hace falta llegar a un punto de saturación o tener un trastorno diagnosticado. Es adecuado iniciar cuando buscas comprenderte mejor o necesitas herramientas para afrontar una etapa de cambio.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORMULARIO DE CONTACTO -->
+<section id="contacto" class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+                    <h3 class="fw-bold text-center mb-2">Solicitar una Cita</h3>
+                    <p class="text-muted-custom text-center mb-4">Completa el formulario y te responderemos en un plazo máximo de 24 horas.</p>
+                    
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                      {% if messages %}
+                        {% for category, message in messages %}
+                          <div class="alert alert-{{ category }} alert-dismissible fade show rounded-3" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                          </div>
+                        {% endfor %}
+                      {% endif %}
+                    {% endwith %}
+
+                    <form action="{{ url_for('main.contacto') }}" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Nombre Completo</label>
+                                <input type="text" name="nombre" class="form-control rounded-3 py-2" required placeholder="Tu nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Teléfono / WhatsApp</label>
+                                <input type="tel" name="telefono" class="form-control rounded-3 py-2" required placeholder="Ej: +54 9...">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Correo Electrónico</label>
+                                <input type="email" name="email" class="form-control rounded-3 py-2" required placeholder="correo@ejemplo.com">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-semibold">Motivo de Consulta</label>
+                                <select name="motivo" class="form-select rounded-3 py-2">
+                                    <option value="Psicoterapia Online">Psicoterapia Online</option>
+                                    <option value="Terapia de Pareja">Terapia de Pareja</option>
+                                    <option value="Ansiedad o Estrés">Ansiedad o Estrés</option>
+                                    <option value="Otro">Otro motivo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mt-4 text-center">
+                                <button type="submit" class="btn btn-brand btn-lg rounded-pill px-5 w-100 shadow-sm py-3 fs-6">Enviar Solicitud</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

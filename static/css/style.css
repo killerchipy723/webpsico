@@ -1,0 +1,140 @@
+:root {
+    /* Paleta de Color: Verde Manzana Ajustado para Accesibilidad WCAG (AA/AAA) */
+    --brand-primary: #4a9e1e;        /* Verde manzana equilibrado con contraste texto blanco */
+    --brand-hover: #3b8017;          /* Verde para estados :hover y :active */
+    --brand-dark: #163321;           /* Verde bosque muy oscuro (excelente contraste para títulos) */
+    --brand-subtle: #eaf6e5;         /* Verde muy claro para contenedores, tarjetas y badges */
+    --text-dark: #1d2620;            /* Texto cuerpo principal de alta legibilidad */
+    --text-muted: #526155;           /* Texto secundario/descriptivo */
+}
+
+body {
+    color: var(--text-dark);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Tipografía y Encabezados */
+h1, h2, h3, h4, h5, h6, .fw-bold-dark {
+    color: var(--brand-dark) !important;
+}
+
+.text-muted-custom {
+    color: var(--text-muted) !important;
+}
+
+/* Botón Principal (Solid) */
+.btn-brand {
+    background-color: var(--brand-primary);
+    color: #ffffff !important;
+    border: none;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-brand:hover, 
+.btn-brand:focus,
+.btn-brand:active {
+    background-color: var(--brand-hover);
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(74, 158, 30, 0.35);
+}
+
+/* Botón Secundario (Outline) */
+.btn-outline-brand {
+    border: 2px solid var(--brand-dark);
+    color: var(--brand-dark);
+    font-weight: 600;
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-outline-brand:hover,
+.btn-outline-brand:focus,
+.btn-outline-brand:active {
+    background-color: var(--brand-dark);
+    color: #ffffff !important;
+}
+
+/* Badges e Íconos */
+.badge-brand {
+    background-color: var(--brand-subtle);
+    color: var(--brand-hover);
+    font-weight: 700;
+}
+
+.bg-brand-dark {
+    background-color: var(--brand-dark) !important;
+}
+
+.icon-box-brand {
+    background-color: var(--brand-subtle);
+    color: var(--brand-hover);
+}
+
+/* Botón Flotante WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #ffffff !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 1050;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Campos de Formulario */
+.form-control:focus, 
+.form-select:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.25rem rgba(74, 158, 30, 0.2);
+}
+
+/* Acordeón de Bootstrap */
+.accordion-button:not(.collapsed) {
+    color: var(--brand-dark);
+    background-color: var(--brand-subtle);
+    font-weight: 700;
+}
+
+.accordion-button:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.25rem rgba(74, 158, 30, 0.2);
+}
+
+.accordion-button::after {
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Utilidades Responsivas */
+.max-w-700 { max-width: 700px; }
+.max-w-800 { max-width: 800px; }
+
+@media (min-width: 768px) {
+    .min-vh-md-75 { 
+        min-height: 75vh; 
+    }
+}
+
+/* Efecto hover suave para los enlaces del Navbar */
+.nav-hover {
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-hover:hover {
+    color: var(--brand-primary) !important;
+}
