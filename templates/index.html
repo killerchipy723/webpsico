@@ -16,7 +16,9 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="{{ url_for('static', filename='img/foto.jpg') }}" class="img-fluid rounded-4 shadow" alt="Lic. Inés Camaño" style="max-height: 450px; width: 100%; object-fit: cover;">
+                <div class="hero-img-container shadow rounded-4 overflow-hidden bg-white p-2">
+                    <img src="{{ url_for('static', filename='img/lic.jpg') }}" class="hero-img rounded-3" alt="Lic. Inés Camaño">
+                </div>
             </div>
         </div>
     </div>
@@ -34,31 +36,31 @@
                 <div class="row text-center mt-4 g-3">
                     <div class="col-4">
                         <div class="p-3 bg-light rounded-4 border">
-                            <h3 class="fw-bold mb-0" style="color: var(--brand-primary);">+500</h3>
+                            <h3 class="fw-bold mb-0" style="color: var(--brand-hover);">+500</h3>
                             <small class="text-muted-custom">Pacientes</small>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="p-3 bg-light rounded-4 border">
-                            <h3 class="fw-bold mb-0" style="color: var(--brand-primary);">+3.000</h3>
+                            <h3 class="fw-bold mb-0" style="color: var(--brand-hover);">+3.000</h3>
                             <small class="text-muted-custom">Horas clínica</small>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="p-3 bg-light rounded-4 border">
-                            <h3 class="fw-bold mb-0" style="color: var(--brand-primary);">100%</h3>
+                            <h3 class="fw-bold mb-0" style="color: var(--brand-hover);">100%</h3>
                             <small class="text-muted-custom">Confidencial</small>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="card border-0 bg-brand-dark text-white p-4 p-md-5 rounded-4 shadow-lg">
+                <div class="card border-0 shadow-sm p-4 p-md-5 rounded-4" style="background-color: var(--brand-subtle);">
                     <div class="card-body">
-                        <blockquote class="blockquote mb-0 fs-5 fst-italic">
+                        <blockquote class="blockquote mb-0 fs-5 fst-italic text-dark">
                             "Ir a terapia no significa estar en una situación crítica; significa contar con herramientas para vivir con mayor calma y plenitud."
                         </blockquote>
-                        <figcaption class="blockquote-footer text-white-50 mt-4 mb-0 fs-6">
+                        <figcaption class="blockquote-footer text-muted mt-4 mb-0 fs-6">
                             Lic. Inés Camaño
                         </figcaption>
                     </div>

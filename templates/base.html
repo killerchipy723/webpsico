@@ -13,16 +13,16 @@
 </head>
 <body>
 
-    <!-- Topbar Informativa (Opcional pero muy profesional) -->
-    <div class="bg-brand-dark text-white py-1 px-3 d-none d-lg-block small">
+    <!-- Topbar Informativa con tono suave -->
+    <div class="bg-brand-header-footer py-2 px-3 d-none d-lg-block small border-bottom">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <span class="me-3"><i class="bi bi-geo-alt me-1" style="color: var(--brand-primary);"></i> Atención Presencial y Online</span>
-                <span><i class="bi bi-clock me-1" style="color: var(--brand-primary);"></i> Lun a Vie: 9:00 - 19:00</span>
+                <span class="me-3"><i class="bi bi-geo-alt me-1" style="color: var(--brand-hover);"></i> Atención Presencial y Online</span>
+                <span><i class="bi bi-clock me-1" style="color: var(--brand-hover);"></i> Lun a Vie: 9:00 - 19:00</span>
             </div>
             <div>
-                <a href="mailto:contacto@inescamano.com" class="text-white-50 text-decoration-none me-3"><i class="bi bi-envelope me-1"></i> contacto@inescamano.com</a>
-                <span class="text-white-50"><i class="bi bi-whatsapp me-1 text-success"></i> +54 9 ...</span>
+                <a href="mailto:contacto@inescamano.com" class="text-dark text-decoration-none me-3"><i class="bi bi-envelope me-1"></i> contacto@inescamano.com</a>
+                <span class="text-dark"><i class="bi bi-whatsapp me-1 text-success"></i> +54 9 ...</span>
             </div>
         </div>
     </div>
@@ -30,7 +30,6 @@
     <!-- Navbar Principal Moderno -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
         <div class="container">
-            <!-- Logo / Nombre -->
             <a class="navbar-brand d-flex align-items-center fw-bold text-dark fs-4" href="#inicio">
                 <div class="icon-box-brand p-2 rounded-3 me-2 fs-5 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
                     <i class="bi bi-heart-pulse-fill"></i>
@@ -38,26 +37,16 @@
                 <span>Lic. Inés Camaño</span>
             </a>
 
-            <!-- Botón Hamburguesa Móvil -->
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Links de Navegación -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center gap-lg-3 py-3 py-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#sobre-mi">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#faq">FAQ</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold px-2 text-dark nav-hover" href="#faq">FAQ</a></li>
                     <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
                         <a class="btn btn-brand rounded-pill px-4 py-2 w-100 shadow-sm" href="#contacto">Agenda tu Cita</a>
                     </li>
@@ -77,30 +66,30 @@
         <i class="bi bi-whatsapp"></i>
     </a>
 
-    <!-- Footer Elegante -->
-    <footer class="bg-brand-dark text-white pt-5 pb-4 mt-5">
+    <!-- Footer Armonioso y Limpio -->
+    <footer class="bg-brand-header-footer pt-5 pb-4 mt-5 border-top">
         <div class="container text-center text-md-start">
             <div class="row g-4">
                 <div class="col-md-5">
-                    <h5 class="fw-bold text-white mb-3"><i class="bi bi-heart-pulse-fill me-2" style="color: var(--brand-primary);"></i>Lic. Inés Camaño</h5>
-                    <p class="text-white-50 small pe-md-4">Espacio de psicoterapia individual y de pareja. Atención presencial y online enfocada en brindar un proceso cercano, profesional y accesible.</p>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-heart-pulse-fill me-2" style="color: var(--brand-hover);"></i>Lic. Inés Camaño</h5>
+                    <p class="text-muted-custom small pe-md-4">Espacio de psicoterapia individual y de pareja. Atención presencial y online enfocada en brindar un proceso cercano, profesional y accesible.</p>
                 </div>
                 <div class="col-md-3">
-                    <h6 class="fw-bold text-white mb-3">Navegación</h6>
+                    <h6 class="fw-bold mb-3">Navegación</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#sobre-mi" class="text-white-50 text-decoration-none">Sobre Mí</a></li>
-                        <li class="mb-2"><a href="#servicios" class="text-white-50 text-decoration-none">Servicios</a></li>
-                        <li class="mb-2"><a href="#faq" class="text-white-50 text-decoration-none">Preguntas Frecuentes</a></li>
+                        <li class="mb-2"><a href="#sobre-mi" class="text-muted-custom text-decoration-none">Sobre Mí</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-muted-custom text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-muted-custom text-decoration-none">Preguntas Frecuentes</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h6 class="fw-bold text-white mb-3">Contacto Directo</h6>
-                    <p class="text-white-50 mb-2"><i class="bi bi-envelope me-2" style="color: var(--brand-primary);"></i>contacto@inescamano.com</p>
-                    <p class="text-white-50 mb-0"><i class="bi bi-geo-alt me-2" style="color: var(--brand-primary);"></i>Atención Presencial y Online</p>
+                    <h6 class="fw-bold mb-3">Contacto Directo</h6>
+                    <p class="text-muted-custom mb-2"><i class="bi bi-envelope me-2" style="color: var(--brand-hover);"></i>contacto@inescamano.com</p>
+                    <p class="text-muted-custom mb-0"><i class="bi bi-geo-alt me-2" style="color: var(--brand-hover);"></i>Atención Presencial y Online</p>
                 </div>
             </div>
-            <hr class="border-secondary mt-5">
-            <p class="text-center text-white-50 small mb-0">&copy; 2026 Lic. Inés Camaño. Todos los derechos reservados.</p>
+            <hr class="border-secondary opacity-25 mt-5">
+            <p class="text-center text-muted-custom small mb-0">&copy; 2026 Lic. Inés Camaño. Todos los derechos reservados.</p>
         </div>
     </footer>
 

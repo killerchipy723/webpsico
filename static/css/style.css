@@ -1,11 +1,10 @@
 :root {
-    /* Paleta de Color: Verde Manzana Ajustado para Accesibilidad WCAG (AA/AAA) */
-    --brand-primary: #4a9e1e;        /* Verde manzana equilibrado con contraste texto blanco */
-    --brand-hover: #3b8017;          /* Verde para estados :hover y :active */
-    --brand-dark: #163321;           /* Verde bosque muy oscuro (excelente contraste para títulos) */
-    --brand-subtle: #eaf6e5;         /* Verde muy claro para contenedores, tarjetas y badges */
-    --text-dark: #1d2620;            /* Texto cuerpo principal de alta legibilidad */
-    --text-muted: #526155;           /* Texto secundario/descriptivo */
+    --brand-primary: #cca28a;        /* Color principal (Arena / Salmón suave) */
+    --brand-hover: #934932;          /* Color de hover y acentos oscuros (Terracota) */
+    --brand-dark: #3a1e16;           /* Marrón oscuro solo para textos de alto contraste */
+    --brand-subtle: #fbf5f1;         /* Fondo muy suave y cálido para tarjetas y badges */
+    --text-dark: #231b18;            /* Texto cuerpo accesible */
+    --text-muted: #66544e;           /* Texto secundario accesible */
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 
 /* Tipografía y Encabezados */
 h1, h2, h3, h4, h5, h6, .fw-bold-dark {
-    color: var(--brand-dark) !important;
+    color: var(--text-dark) !important;
 }
 
 .text-muted-custom {
@@ -37,13 +36,13 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
 .btn-brand:active {
     background-color: var(--brand-hover);
     color: #ffffff !important;
-    box-shadow: 0 4px 14px rgba(74, 158, 30, 0.35);
+    box-shadow: 0 4px 14px rgba(147, 73, 50, 0.35);
 }
 
 /* Botón Secundario (Outline) */
 .btn-outline-brand {
-    border: 2px solid var(--brand-dark);
-    color: var(--brand-dark);
+    border: 2px solid var(--brand-primary);
+    color: var(--brand-hover);
     font-weight: 600;
     background-color: transparent;
     transition: all 0.25s ease-in-out;
@@ -52,8 +51,18 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
 .btn-outline-brand:hover,
 .btn-outline-brand:focus,
 .btn-outline-brand:active {
-    background-color: var(--brand-dark);
+    background-color: var(--brand-hover);
+    border-color: var(--brand-hover);
     color: #ffffff !important;
+}
+
+/* Navbar Links Hover */
+.nav-hover {
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-hover:hover {
+    color: var(--brand-hover) !important;
 }
 
 /* Badges e Íconos */
@@ -63,13 +72,28 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
     font-weight: 700;
 }
 
-.bg-brand-dark {
-    background-color: var(--brand-dark) !important;
+/* Topbar y Footer unificados en tono principal suave / neutro */
+.bg-brand-header-footer {
+    background-color: #f7efe9 !important;
+    color: var(--text-dark);
 }
 
 .icon-box-brand {
     background-color: var(--brand-subtle);
     color: var(--brand-hover);
+}
+
+/* Ajuste de tamaño para la imagen del Hero (más integrada y proporcionada) */
+.hero-img-container {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 /* Botón Flotante WhatsApp */
@@ -101,23 +125,19 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
 .form-control:focus, 
 .form-select:focus {
     border-color: var(--brand-primary);
-    box-shadow: 0 0 0 0.25rem rgba(74, 158, 30, 0.2);
+    box-shadow: 0 0 0 0.25rem rgba(204, 162, 138, 0.35);
 }
 
 /* Acordeón de Bootstrap */
 .accordion-button:not(.collapsed) {
-    color: var(--brand-dark);
+    color: var(--text-dark);
     background-color: var(--brand-subtle);
     font-weight: 700;
 }
 
 .accordion-button:focus {
     border-color: var(--brand-primary);
-    box-shadow: 0 0 0 0.25rem rgba(74, 158, 30, 0.2);
-}
-
-.accordion-button::after {
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 0 0.25rem rgba(204, 162, 138, 0.35);
 }
 
 /* Utilidades Responsivas */
@@ -128,13 +148,4 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
     .min-vh-md-75 { 
         min-height: 75vh; 
     }
-}
-
-/* Efecto hover suave para los enlaces del Navbar */
-.nav-hover {
-    transition: color 0.2s ease-in-out;
-}
-
-.nav-hover:hover {
-    color: var(--brand-primary) !important;
 }
