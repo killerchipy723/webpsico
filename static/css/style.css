@@ -139,6 +139,18 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
     border-color: var(--brand-primary);
     box-shadow: 0 0 0 0.25rem rgba(204, 162, 138, 0.35);
 }
+/* Estilo para los iconos de redes sociales */
+.social-icon {
+    color: var(--text-dark);
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    color: var(--brand-hover) !important;
+    transform: translateY(-2px);
+}
+
+
 
 /* Utilidades Responsivas */
 .max-w-700 { max-width: 700px; }
@@ -147,5 +159,34 @@ h1, h2, h3, h4, h5, h6, .fw-bold-dark {
 @media (min-width: 768px) {
     .min-vh-md-75 { 
         min-height: 75vh; 
+    }
+}
+/* Contenedor de la marquesina */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+/* Pistas de animación para un desplazamiento continuo */
+.marquee-track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+}
+
+/* Pausar la marquesina al pasar el mouse (muy útil para que el usuario pueda leer con calma) */
+.marquee-container:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+/* Animación fluida de derecha a izquierda */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }

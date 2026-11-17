@@ -13,17 +13,31 @@
 </head>
 <body>
 
-    <!-- Topbar Informativa con tono suave -->
+    <!-- Topbar Informativa con Marquesina Animada -->
     <div class="bg-brand-header-footer py-2 px-3 d-none d-lg-block small border-bottom">
         <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <span class="me-3"><i class="bi bi-geo-alt me-1" style="color: var(--brand-hover);"></i> Atención Presencial y Online</span>
-                <span><i class="bi bi-clock me-1" style="color: var(--brand-hover);"></i> Lun a Vie: 9:00 - 19:00</span>
+            
+            <!-- Marquesina de derecha a izquierda -->
+            <div class="marquee-container col-7">
+                <div class="marquee-track">
+                    <span class="me-5"><i class="bi bi-geo-alt me-1" style="color: var(--brand-hover);"></i> Atención Presencial y Online</span>
+                    <span class="me-5"><i class="bi bi-clock me-1" style="color: var(--brand-hover);"></i> Lun a Vie: 9:00 - 19:00</span>
+                    <span class="me-5"><i class="bi bi-heart-pulse me-1" style="color: var(--brand-hover);"></i> Espacio seguro de bienestar emocional</span>
+                </div>
             </div>
-            <div>
-                <a href="mailto:contacto@inescamano.com" class="text-dark text-decoration-none me-3"><i class="bi bi-envelope me-1"></i> contacto@inescamano.com</a>
-                <span class="text-dark"><i class="bi bi-whatsapp me-1 text-success"></i> +54 9 ...</span>
+
+            <!-- Redes y Contacto fijo a la derecha -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="mailto:contacto@inescamano.com" class="text-dark text-decoration-none"><i class="bi bi-envelope me-1"></i> contacto@inescamano.com</a>
+                <span class="text-muted">|</span>
+                <div class="d-flex gap-2">
+                    <a href="https://instagram.com" target="_blank" class="text-dark text-decoration-none" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="text-dark text-decoration-none" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="text-dark text-decoration-none" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="text-dark text-decoration-none" title="TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
             </div>
+
         </div>
     </div>
 
@@ -34,7 +48,7 @@
                 <div class="icon-box-brand p-2 rounded-3 me-2 fs-5 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
                     <i class="bi bi-heart-pulse-fill"></i>
                 </div>
-                <span>Lic. Inés Camaño</span>
+                <span>Lic. Inés Camaño(DEMO) </span>
             </a>
 
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
