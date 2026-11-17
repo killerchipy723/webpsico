@@ -85,6 +85,77 @@
     </div>
 </section>
 
+<!-- SECCIÓN GALERÍA / CARRUSEL PROFESIONAL -->
+<section id="galeria" class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+            <span class="badge badge-brand fs-6 px-3 py-2 rounded-pill mb-2">Nuestro Espacio</span>
+            <h2 class="fw-bold">Un entorno diseñado para tu bienestar</h2>
+            <p class="text-muted-custom lead">Espacios cómodos, seguros y confidenciales para coordinar sesiones presenciales o virtuales.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Carrusel Bootstrap con fundido suave -->
+                <div id="carouselConsultorio" class="carousel slide carousel-fade shadow-sm rounded-4 overflow-hidden border" data-bs-ride="carousel" data-bs-interval="4000">
+                    <!-- Indicadores (puntos de navegación) -->
+                    <div class="carousel-indicators mb-3">
+                        <button type="button" data-bs-target="#carouselConsultorio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselConsultorio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselConsultorio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- Diapositivas (Imágenes) -->
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="carousel-img-container">
+                                <img src="{{ url_for('static', filename='img/cons3.jpg') }}" class="d-block w-100 carousel-img" alt="Consultorio presencial">
+                                <div class="carousel-caption d-none d-md-block carousel-caption-custom rounded-3 px-3 py-2">
+                                    <h5 class="fw-bold mb-0">Consultorio Presencial</h5>
+                                    <p class="small mb-0">Un ambiente cálido y tranquilo adaptado a cada sesión.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="carousel-img-container">
+                                <img src="{{ url_for('static', filename='img/cons2.jpg') }}" class="d-block w-100 carousel-img" alt="Sesión de atención online">
+                                <div class="carousel-caption d-none d-md-block carousel-caption-custom rounded-3 px-3 py-2">
+                                    <h5 class="fw-bold mb-0">Atención Virtual</h5>
+                                    <p class="small mb-0">Conexión directa, ágil y totalmente confidencial.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="carousel-img-container">
+                                <img src="{{ url_for('static', filename='img/cons1.png') }}" class="d-block w-100 carousel-img" alt="Espacio de escucha activa">
+                                <div class="carousel-caption d-none d-md-block carousel-caption-custom rounded-3 px-3 py-2">
+                                    <h5 class="fw-bold mb-0">Espacio de Escucha</h5>
+                                    <p class="small mb-0">Herramientas prácticas para abordar tus objetivos emocionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones Anterior / Siguiente -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselConsultorio" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon rounded-circle bg-dark p-3" aria-hidden="true" style="--bs-bg-opacity: .4;"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselConsultorio" data-bs-slide="next">
+                        <span class="carousel-control-next-icon rounded-circle bg-dark p-3" aria-hidden="true" style="--bs-bg-opacity: .4;"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- SERVICIOS -->
 <section id="servicios" class="py-5 bg-light">
     <div class="container py-4">
